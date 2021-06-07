@@ -1,3 +1,4 @@
-export default ({ name }) => {
+export default (obj) => {
+  const { name } = obj;
   return name;
 };
