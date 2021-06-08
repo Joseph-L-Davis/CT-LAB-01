@@ -31,16 +31,16 @@ describe('return new array with original array and added item to the end', () =>
 
 describe('capitalize all strings, filter out strings that start with f/F', () => {
 
-  it.skip('capitalize all strings, filter out strings that start with f/F', () => {
+  it('capitalize all strings, filter out strings that start with f/F', () => {
 
     const strings = ['letter', 'filter', 'pajama', 'focus'];
-    expect(capitalizeAndFilter(strings)).toEqual(['LETTER', 'ILTER', 'PAJAMA', 'OCUS']);
+    expect(capitalizeAndFilter(strings)).toEqual(['LETTER', 'PAJAMA']);
   });
 });
 
 describe('return futurama quote', () => {
 
-  it('return futurama quote', async () => {
+  it.skip('return futurama quote', async () => {
     
     expect(await fetchQuotes()).toEqual(expect.objectContaining({
       'name': 'Bender',
