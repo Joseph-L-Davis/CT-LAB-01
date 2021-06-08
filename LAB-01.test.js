@@ -17,4 +17,11 @@ describe('return new array with original array and added item to the end', () =>
     const numbers = [1, 2, 3];
     expect(copyAndPush(numbers, 4)).toEqual([1, 2, 3, 4]);
   });
+
+  it('return original array to make sure its unchanged', () => {
+
+    const numbers = [1, 2, 3];
+    expect(copyAndPush(numbers, 4)).toEqual([1, 2, 3, 4]);
+    expect(numbers).toEqual([1, 2, 3]);
+  });
 });
