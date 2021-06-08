@@ -1,3 +1,4 @@
+import capitalizeAndFilter from './capitalizeAndFilter';
 import copyAndPush from './copyAndPush';
 import getName from './getName';
 
@@ -23,5 +24,15 @@ describe('return new array with original array and added item to the end', () =>
     const numbers = [1, 2, 3];
     expect(copyAndPush(numbers, 4)).toEqual([1, 2, 3, 4]);
     expect(numbers).toEqual([1, 2, 3]);
+  });
+});
+
+
+describe('capitalize all strings, filter out strings that start with f/F', () => {
+
+  it('capitalize all strings, filter out strings that start with f/F', () => {
+
+    const strings = ['letter', 'filter', 'pajama', 'focus'];
+    expect(capitalizeAndFilter(strings)).toEqual('spot');
   });
 });
